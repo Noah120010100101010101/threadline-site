@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Threadline — Reimagined</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0e0e0e;
+      color: #ffffff;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 4%;
+      background: rgba(20, 20, 20, 0.9);
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      color: #fff;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 12px;
+      border-radius: 50%;
+      background: #fff;
+      padding: 4px;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #bbb;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5rem 2rem;
+      background: radial-gradient(ellipse at center, #1a1a1a 0%, #0e0e0e 100%);
+      animation: fadeIn 1s ease-in;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 800px;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .cta button {
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAALACAIAAABLMcoyAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nO3SsQ3CMBBEUfT//9VvGmJxh1DkA7zzbQhxk1gKhEvS+AQAAAAAAAAAAAAAAAHxqf/QDxzMGAAAA4PDKzs6qzMr4+DoCZmZnZ2dnAwMAAABwcHBwcAAAgIeHh4eHAICDg4ODAADAwMDAwAAAgMDw8PAACAh4eHh4cAgIODg4MAAMDAwMDAAACAwPDw8AAICHh4eHhwCAg4ODgwAAwMDAwMAAAIDg6Fby9Ryyk8moyC8y0d3NuFt8ybHHeD4Dy7r8ZkAMjN5TjN/VX5BAAAAAAAAAAAAAAAAgMYF8GI5fX9VByoAAAAASUVORK5CYII=" alt="Threadline Logo" />
+      Threadline
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Next-Gen Apparel. Minimal Design. Maximum Impact.</h1>
+      <p>Threadline is your portal to fashion rooted in culture, tech, and community. Experience the future of clothing.</p>
+      <div class="cta">
+        <button onclick="alert('Coming soon!')">Explore Drops</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Threadline. All rights reserved.
+  </footer>
+
+</body>
+</html>
